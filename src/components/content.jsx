@@ -5,6 +5,12 @@ import userImg1 from "../assets/Mask (1).png"
 import userImg2 from "../assets/Mask.png"
 import userImg3 from "../assets/Userpic (1).png"
 import userImg4 from "../assets/Userpic.png"
+import AppWork from "./works";
+import workimg1 from "../assets/Work1.png"
+import workimg2 from "../assets/Work2.png"
+import workimg3 from "../assets/Work3.png"
+import workimg4 from "../assets/work4.png"
+
 
 const Content = () => {
     return (
@@ -18,6 +24,7 @@ const Content = () => {
                 </div>
             </div>
             <br />
+            {/* Clients */}
             <div>
                 <div className="col">
                     <div className="row d-flex justify-content-center gap-4">
@@ -33,9 +40,50 @@ const Content = () => {
             </div>
             <br />
             <div className="col">
-                <AppCardTwo/>
+                <AppCardTwo />
+            </div>
+            <br />
+            {/* Work */}
+            <div>
+                <div className="col">
+                    <div className="row d-flex justify-content-center gap-4">
+                        <div className="d-flex justify-content-around">
+                            <h1 style={{ textAlign: "center", color: "#fff" }} >Last Works</h1>
+                            <button className="btn work-btn"> View all Works</button>
+                        </div>
+                        <AppWork workImage={workimg1} imgHeading="UI KIT" imgPara="Mozart Project" />
+                        <AppWork workImage={workimg3} imgHeading="FRAMEWORK" imgPara="Startup Framework 2.0" />
+                    </div>
+                    <div className="row d-flex justify-content-center gap-4">
+                        <AppWork workImage={workimg2} imgHeading="PHOTOS" imgPara="From the Sky" />
+                        <AppWork workImage={workimg4} imgHeading="PICTURES" imgPara="Air Forces" />
+                    </div>
+                </div>
+            </div>
+{/* Team */}
+            <br />
+            <div>
+                <div className="col">
+                    <div className="row d-flex justify-content-center gap-4">
+                        <div className="d-flex justify-content-around">
+                            <h1 style={{ textAlign: "center", color: "#fff" }} >Last Works</h1>
+                            <button className="btn work-btn"> View all Works</button>
+                        </div>
+                        <AppWork workImage={workimg1} imgHeading="UI KIT" imgPara="Mozart Project" />
+                        <AppWork workImage={workimg3} imgHeading="FRAMEWORK" imgPara="Startup Framework 2.0" />
+                    </div>
+                    <div className="row d-flex justify-content-center gap-4">
+                        <AppWork workImage={workimg2} imgHeading="PHOTOS" imgPara="From the Sky" />
+                        <AppWork workImage={workimg4} imgHeading="PICTURES" imgPara="Air Forces" />
+                    </div>
+                </div>
             </div>
 
+
+
+
+
+            {/* workImage, imgHeading, imgPara */}
 
         </div>
 
