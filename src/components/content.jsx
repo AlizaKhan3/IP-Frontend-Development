@@ -10,7 +10,7 @@ import workimg1 from "../assets/Work1.png"
 import workimg2 from "../assets/Work2.png"
 import workimg3 from "../assets/Work3.png"
 import workimg4 from "../assets/work4.png"
-
+import AppTeam from "./team";
 
 const Content = () => {
     return (
@@ -60,30 +60,30 @@ const Content = () => {
                     </div>
                 </div>
             </div>
-{/* Team */}
+            {/* Team */}
             <br />
-            <div>
-                <div className="col">
-                    <div className="row d-flex justify-content-center gap-4">
-                        <div className="d-flex justify-content-around">
-                            <h1 style={{ textAlign: "center", color: "#fff" }} >Last Works</h1>
-                            <button className="btn work-btn"> View all Works</button>
-                        </div>
-                        <AppWork workImage={workimg1} imgHeading="UI KIT" imgPara="Mozart Project" />
-                        <AppWork workImage={workimg3} imgHeading="FRAMEWORK" imgPara="Startup Framework 2.0" />
+
+            <div className="row d-flex justify-content-between gap-4 p-5">
+                <h1 style={{ textAlign: "left", color: "#fff" }} >Startup Crew</h1>
+                <p style={{fontSize:"22px", color:"#fff"}}>The most important part of the Startup Framework is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks from UI Kit.</p>
+                <div className="row">
+                    <div className="col-md-4 col-sm-6 col-xs-12">
+                        <AppTeam userImg={userImg1} userName="Leah Salomon" userInfo="UI Designer" userLogo="" />
                     </div>
-                    <div className="row d-flex justify-content-center gap-4">
-                        <AppWork workImage={workimg2} imgHeading="PHOTOS" imgPara="From the Sky" />
-                        <AppWork workImage={workimg4} imgHeading="PICTURES" imgPara="Air Forces" />
+                    <div className="col-md-4 col-sm-6 col-xs-12">
+                        <AppTeam userImg={userImg1} userName="Colin Timmons" userInfo="UX Designer" userLogo="" />
+                    </div>
+                    <div className="col-md-4 col-sm-6 col-xs-12">
+                        <AppTeam userImg={userImg1} userName="Miguel Osborne" userInfo="Front-end Developer" userLogo="" />
+                    </div>
+                    <div className="col-md-4 col-sm-6 col-xs-12">
+                        <AppTeam userImg={workimg1} userName="Taylor Simon" userInfo="Product Manager" userLogo="" />
+                    </div>
+                    <div className="col-md-4 col-sm-6 col-xs-12">
+                        <AppTeam userImg={workimg1} userName="Steven MacAlister" userInfo="Copyrighter" userLogo="" />
                     </div>
                 </div>
             </div>
-
-
-
-
-
-            {/* workImage, imgHeading, imgPara */}
 
         </div>
 
