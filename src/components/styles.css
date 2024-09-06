@@ -85,3 +85,9 @@
   height: 70px;
   width: 70px;
 }
+
+.work-btn{
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
