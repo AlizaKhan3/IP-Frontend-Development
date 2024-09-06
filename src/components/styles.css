@@ -1,10 +1,8 @@
-.carouselbg {
+.carouselbg{
   opacity: 1;
-  /* adjust opacity to balance the purple tone */
-  height: 590px;
+  height: 100vh;
   object-fit: cover;
   background-color: rgba(75, 0, 130, 0.9);
-  /* add a deep purple background color with 50% opacity */
   position: absolute;
 }
 
@@ -12,13 +10,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 200px;
+  justify-items: flex-start;
+  margin-bottom: 120px;
 }
 
 .carouset-para {
-  /* margin: 20px 200px; */
-  width: 500px;
+  width: auto;
+  max-width: 500px;
 }
 
 .nav {
@@ -29,13 +27,61 @@
   position: relative;
 }
 
-.nav ul li a{
+.nav ul li a {
   color: #fff !important;
+  text-decoration: none;
 }
+
 .carousel-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   position: relative;
+}
+
+.btn {
+  background: #482BE7;
+  border-radius: 100px;
+  height: 50px;
+  width: 230px;
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content-img {
+  position: relative;
+  height: 100vh;
+}
+
+.content-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.bg-img{
+  height: 100vh;
+}
+
+.content{
+  background: #1E0E62; 
+  overflow-x: hidden;
+}
+
+.card{
+  max-width: 540px;
+  background-color: #1E0E62;
+  border: 2px solid #CCC;
+}
+
+.yt-logo{
+  color: red;
+  height: 70px;
+  width: 70px;
 }
