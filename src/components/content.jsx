@@ -11,6 +11,8 @@ import workimg2 from "../assets/Work2.png"
 import workimg3 from "../assets/Work3.png"
 import workimg4 from "../assets/work4.png"
 import AppTeam from "./team";
+import AppContact from "./contact";
+import AppFooter from "./footer";
 
 const Content = () => {
     return (
@@ -62,10 +64,9 @@ const Content = () => {
             </div>
             {/* Team */}
             <br />
-
             <div className="row d-flex justify-content-between gap-4 p-5">
                 <h1 style={{ textAlign: "left", color: "#fff" }} >Startup Crew</h1>
-                <p style={{fontSize:"22px", color:"#fff"}}>The most important part of the Startup Framework is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks from UI Kit.</p>
+                <p style={{ fontSize: "22px", color: "#fff" }}>The most important part of the Startup Framework is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks from UI Kit.</p>
                 <div className="row">
                     <div className="col-md-4 col-sm-6 col-xs-12">
                         <AppTeam userImg={userImg1} userName="Leah Salomon" userInfo="UI Designer" userLogo="" />
@@ -84,7 +85,10 @@ const Content = () => {
                     </div>
                 </div>
             </div>
-
+            {/* Contact*/}
+            <br />
+        <AppContact formHeading="Let’s Keep in Touch" formPara="We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily."/>
+<AppFooter/>
         </div>
 
     );
